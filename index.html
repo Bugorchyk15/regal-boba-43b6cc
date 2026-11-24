@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>OnМетал | Вироби з металу</title>
+<meta name="description" content="OnМетал — виготовлення металевих воріт, огорож, навісів, перил та сходів у Луцьку.">
+
+<style>
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #263442;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #1b2732;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    color: #d4a44c;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 13px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d4a44c;
+    background: #344656;
+}
+</style>
+</head>
+
+<body><style>
+.hero {
+    min-height: 550px;
+    padding: 100px 7%;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(90deg, rgba(20,31,42,.94), rgba(20,31,42,.48)),
+        url("img/vorota.jpg") center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 720px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 65px);
+    line-height: 1.12;
+    margin: 0 0 22px;
+}
+
+.gold {
+    color: #d4a44c;
+}
+
+.hero p {
+    color: #e0e3e6;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 15px 10px 0 0;
+    background: #d4a44c;
+    color: #202d39;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #d4a44c;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #edc16e;
+    border-color: #edc16e;
+    transform: translateY(-2px);
+}
+
+.button-outline {
+    background: transparent;
+    color: #d4a44c;
+}
+
+.button-outline:hover {
+    background: #d4a44c;
+    color: #202d39;
+}
+
+section {
+    padding: 75px 7%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.section-title h2 {
+    color: #d4a44c;
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.section-title p {
+    color: #cbd1d6;
+    font-size: 18px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.service {
+    display: block;
+    background: #344656;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #46596a;
+    border-bottom: 4px solid #d4a44c;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    background: #3b5062;
+}
+
+.service h3 {
+    color: #d4a44c;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.service p {
+    color: #e0e3e6;
+    line-height: 1.7;
+}
+</style><style>
+.works-preview {
+    background: #1e2b37;
+    text-align: center;
+}
+
+.works-preview img {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    max-height: 430px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.works-preview p {
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.about {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.about p {
+    color: #e0e3e6;
+    font-size: 19px;
+    line-height: 1.9;
+}
+
+.contact {
+    background: #1e2b37;
+    text-align: center;
+}
+
+.contact p {
+    font-size: 20px;
+    color: #ddd;
+    line-height: 1.8;
+}
+
+.contact a.gold {
+    text-decoration: none;
+}
+
+.socials {
+    margin-top: 25px;
+}
+
+.socials a {
+    display: inline-block;
+    color: #d4a44c;
+    text-decoration: none;
+    border: 1px solid #d4a44c;
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    background: #d4a44c;
+    color: #202d39;
+}
+
+footer {
+    padding: 28px 15px;
+    text-align: center;
+    color: #aaa;
+    background: #17222c;
+}
+
+@media (max-width: 650px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .hero {
+        min-height: 470px;
+        padding: 65px 7%;
+    }
+
+    section {
+        padding: 55px 6%;
+    }
+
+    .section-title h2 {
+        font-size: 29px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+}
+</style><header>
+    <a href="index.html" class="logo">OnМетал</a>
+
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="#services">Послуги</a>
+        <a href="works.html">Наші роботи</a>
+        <a href="#contact">Контакти</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Метал, що <span class="gold">створює характер</span></h1>
+
+        <p>
+            Проєктуємо та виготовляємо металеві конструкції,
+            у яких поєднуються міцність, функціональність
+            та індивідуальний дизайн.
+        </p>
+
+        <a href="works.html" class="button">Наші роботи</a>
+        <a href="#contact" class="button button-outline">Зв'язатися з нами</a>
+    </div>
+</section>
+
+<section id="services">
+    <div class="section-title">
+        <h2>Наші послуги</h2>
+        <p>Виготовлення металевих виробів під ваші потреби</p>
+    </div>
+
+    <div class="services">
+
+        <a href="vorota.html" class="service">
+            <h3>Ворота</h3>
+            <p>Розпашні та індивідуальні металеві ворота.</p>
+        </a>
+
+        <a href="ogorozhi.html" class="service">
+            <h3>Огорожі</h3>
+            <p>Надійні та стильні огорожі для вашої території.</p>
+        </a>
+
+        <a href="navisy.html" class="service">
+            <h3>Навіси</h3>
+            <p>Металеві навіси для автомобілів, дворів і терас.</p>
+        </a>
+
+        <a href="peryla.html" class="service">
+            <h3>Перила</h3>
+            <p>Перила та огородження для сходів, балконів і терас.</p>
+        </a>
+
+        <a href="shody.html" class="service">
+            <h3>Сходи</h3>
+            <p>Металеві сходи за індивідуальними розмірами.</p>
+        </a>
+
+    </div>
+</section>
+
+<section class="works-preview">
+    <div class="section-title">
+        <h2>Наші роботи</h2>
+        <p>Реалізовані проєкти OnМетал</p>
+    </div>
+
+    <img src="img/vorota.jpg" alt="Металеві ворота OnМетал">
+
+    <p>
+        Кожен виріб — це поєднання досвіду,
+        майстерності та уваги до деталей.
+    </p>
+
+    <a href="works.html" class="button">Переглянути всі роботи</a>
+</section>
+
+<section>
+    <div class="about">
+        <div class="section-title">
+            <h2>Про OnМетал</h2>
+        </div>
+
+        <p>
+            Ми створюємо металеві конструкції,
+            які поєднують практичність, надійність
+            та естетику. Від задуму та 3D-візуалізації
+            до виготовлення й монтажу.
+        </p>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="section-title">
+        <h2>Зв'яжіться з нами</h2>
+        <p>Обговоримо ваш майбутній проєкт</p>
+    </div>
+
+    <p>
+        Телефон:
+        <a href="tel:+380772299670" class="gold">
+            +380 77 229 96 70
+        </a>
+    </p>
+
+    <div class="socials">
+        <a href="https://www.instagram.com/onmetal2025/" target="_blank" rel="noopener noreferrer">
+            Instagram
+        </a>
+
+        <a href="https://www.facebook.com/share/1EMptj28oR/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+            Facebook
+        </a>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    © OnМетал — вироби з металу
+</footer>
+
+</body>
+</html>

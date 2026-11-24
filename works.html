@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Наші роботи | OnМетал</title>
+<meta name="description" content="Галерея металевих виробів OnМетал: ворота, огорожі, навіси, перила та сходи.">
+
+<style>
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #263442;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #1b2732;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.logo {
+    color: #d4a44c;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #d4a44c;
+}
+
+.intro {
+    text-align: center;
+    padding: 65px 7% 35px;
+}
+
+.intro h1 {
+    color: #d4a44c;
+    font-size: 42px;
+}
+
+.intro p {
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.gallery {
+    padding: 35px 7% 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #344656;
+    border-radius: 10px;
+    overflow: hidden;
+    border-bottom: 4px solid #d4a44c;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card h2 {
+    color: #d4a44c;
+    margin-top: 0;
+}
+
+.card p {
+    color: #ddd;
+    line-height: 1.6;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 11px 18px;
+    background: #d4a44c;
+    color: #202d39;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.card a:hover {
+    background: #edc16e;
+}
+
+.no-photo {
+    height: 230px;
+    background: #202d39;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d4a44c;
+    font-size: 24px;
+}
+
+.back {
+    text-align: center;
+    padding: 0 20px 65px;
+}
+
+.back a {
+    display: inline-block;
+    padding: 14px 24px;
+    background: #d4a44c;
+    color: #202d39;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+footer {
+    background: #17222c;
+    color: #aaa;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 650px) {
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .intro h1 {
+        font-size: 32px;
+    }
+
+    .gallery {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <a href="index.html" class="logo">OnМетал</a>
+
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="works.html">Наші роботи</a>
+    </nav>
+</header>
+
+<section class="intro">
+    <h1>Наші роботи</h1>
+    <p>Приклади металевих конструкцій, які ми виготовляємо</p>
+</section>
+
+<main class="gallery">
+
+    <article class="card">
+        <img src="img/vorota.jpg" alt="Металеві ворота">
+        <div class="card-content">
+            <h2>Ворота</h2>
+            <p>Індивідуальні металеві ворота для вашої оселі.</p>
+            <a href="vorota.html">Переглянути</a>
+        </div>
+    </article>
+
+   <article class="card">
+    <img src="img/ogorozhi.jpg" alt="Металева огорожа">
+    <div class="card-content">
+        <h2>Огорожі</h2>
+        <p>Надійні та стильні огорожі для приватних територій.</p>
+        <a href="ogorozhi.html" class="button">Переглянути</a>
+    </div>
+</article>
+
+    <article class="card">
+    <img src="img/navisy.jpg" alt="Металеві навіси OnМетал">
+    <div class="card-content">
+        <h2>Навіси</h2>
+        <p>Металеві навіси для автомобілів, дворів і терас.</p>
+        <a href="navisy.html" class="button">Переглянути</a>
+    </div>
+</article>
+
+   <article class="card">
+    <img src="img/peryla.jpg" alt="Металеві перила">
+    <div class="card-content">
+        <h2>Перила</h2>
+        <p>Перила та огородження для сходів і балконів.</p>
+        <a href="peryla.html" class="button">Переглянути</a>
+    </div>
+</article>
+
+   <article class="card">
+    <img src="img/shodu.jpg" alt="Металеві сходи">
+    <div class="card-content">
+        <h2>Сходи</h2>
+        <p>Металеві сходи за індивідуальними розмірами.</p>
+        <a href="shody.html" class="button">Переглянути</a>
+    </div>
+</article>
+
+</main>
+
+<div class="back">
+    <a href="index.html">← Повернутися на головну</a>
+</div>
+
+<footer>
+    © OnМетал — вироби з металу
+</footer>
+
+</body>
+</html>
