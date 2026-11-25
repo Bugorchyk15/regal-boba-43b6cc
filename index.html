@@ -399,6 +399,30 @@ footer {
 <footer>
     © OnМетал — вироби з металу
 </footer>
+<script>
+    const heroImages = [
+        "img/vorota.jpg",
+        "img/vorota2.jpg",
+        "img/ogorozhi.jpg",
+        "img/navisy.jpg",
+        "img/peryla.jpg",
+        "img/shody.jpg"
+    ];
 
+    let currentIndex = 0;
+    const heroSection = document.querySelector(".hero");
+
+    if (heroSection && heroImages.length > 0) {
+        heroImages.forEach((src) => {
+            const img = new Image();
+            img.src = src;
+        });
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % heroImages.length;
+            heroSection.style.backgroundImage = linear-gradient(90deg, rgba(20,31,42,.94), rgba(20,31,42,.48)), url("${heroImages[currentIndex]}");
+        }, 3000);
+    }
+</script>
 </body>
 </html>
