@@ -145,20 +145,41 @@ section {
 }
 
 .service {
+    position: relative;
+    overflow: hidden;
     display: block;
-    background: #344656;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 30px;
     border-radius: 10px;
     border: 1px solid #46596a;
     border-bottom: 4px solid #d4a44c;
     text-decoration: none;
     color: white;
-    transition: 0.3s;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.service::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(20, 31, 42, 0.55), rgba(20, 31, 42, 0.85));
+    z-index: 0;
+    transition: background 0.3s ease;
+}
+
+.service > * {
+    position: relative;
+    z-index: 1;
 }
 
 .service:hover {
     transform: translateY(-5px);
-    background: #3b5062;
+}
+
+.service:hover::before {
+    background: linear-gradient(180deg, rgba(20, 31, 42, 0.35), rgba(20, 31, 42, 0.72));
 }
 
 .service h3 {
@@ -171,7 +192,6 @@ section {
     color: #e0e3e6;
     line-height: 1.7;
 }
-</style><style>
 .works-preview {
     background: #1e2b37;
     text-align: center;
@@ -311,32 +331,33 @@ footer {
 
     <div class="services">
 
-        <a href="vorota.html" class="service">
-            <h3>Ворота</h3>
-            <p>Розпашні та індивідуальні металеві ворота.</p>
-        </a>
+    <a href="vorota.html" class="service" style="background-image: url('img/vorota.jpg');">
+        <h3>Ворота</h3>
+        <p>Розпашні та індивідуальні металеві ворота.</p>
+    </a>
 
-        <a href="ogorozhi.html" class="service">
-            <h3>Огорожі</h3>
-            <p>Надійні та стильні огорожі для вашої території.</p>
-        </a>
+    <a href="ogorozhi.html" class="service" style="background-image: url('img/ogorozhi.jpg');">
+        <h3>Огорожі</h3>
+        <p>Надійні та стильні огорожі для вашої території.</p>
+    </a>
 
-        <a href="navisy.html" class="service">
-            <h3>Навіси</h3>
-            <p>Металеві навіси для автомобілів, дворів і терас.</p>
-        </a>
+    <a href="navisy.html" class="service" style="background-image: url('img/navisy.jpg');">
+        <h3>Навіси</h3>
+        <p>Металеві навіси для автомобілів, дворів і терас.</p>
+    </a>
 
-        <a href="peryla.html" class="service">
-            <h3>Перила</h3>
-            <p>Перила та огородження для сходів, балконів і терас.</p>
-        </a>
+    <a href="peryla.html" class="service" style="background-image: url('img/peryla.jpg');">
+        <h3>Перила</h3>
+        <p>Перила та огородження для сходів, балконів і терас.</p>
+    </a>
 
-        <a href="shody.html" class="service">
-            <h3>Сходи</h3>
-            <p>Металеві сходи за індивідуальними розмірами.</p>
-        </a>
+    <a href="shody.html" class="service" style="background-image: url('img/shody.jpg');">
+        <h3>Сходи</h3>
+        <p>Металеві сходи за індивідуальними розмірами.</p>
+    </a>
 
-    </div>
+</div>
+
 </section>
 
 <section class="works-preview">
