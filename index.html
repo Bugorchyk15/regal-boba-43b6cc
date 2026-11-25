@@ -401,12 +401,13 @@ footer {
 </footer>
 <script>
     const heroImages = [
-        "img/vorota.jpg",
-        "img/vorota2.jpg",
-        "img/ogorozhi.jpg",
-        "img/navisy.jpg",
-        "img/peryla.jpg",
-        "img/shody.jpg"
+        "img/hero.jpg",
+        "img/hero1.jpg",
+        "img/hero2.jpg",
+        "img/hero3.jpg",
+        "img/hero4.jpg",
+        "img/hero5.jpg",
+        "img/hero6.jpg"
     ];
 
     let currentIndex = 0;
@@ -420,7 +421,7 @@ footer {
 
         setInterval(() => {
             currentIndex = (currentIndex + 1) % heroImages.length;
-            heroSection.style.backgroundImage = linear-gradient(90deg, rgba(20,31,42,.94), rgba(20,31,42,.48)), url("${heroImages[currentIndex]}");
+            heroSection.style.backgroundImage = `linear-gradient(90deg, rgba(20,31,42,.94), rgba(20,31,42,.48)), url("${heroImages[currentIndex]}");
         }, 3000);
     }
 </script>
